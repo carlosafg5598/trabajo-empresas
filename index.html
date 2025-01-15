@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body style */
+        body {
+            background-color: #fff5f7;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Navbar style */
+        .navbar {
+            background-color: #ffd7e0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #ff5c8a;
+        }
+
+        .navbar-brand:hover {
+            color: #ff2d6c;
+        }
+
+        .nav-link {
+            color: #ff5c8a;
+        }
+
+        .nav-link:hover {
+            color: #ff2d6c;
+        }
+
+        /* Titles */
+        h2 {
+            color: #ff5c8a;
+            margin-bottom: 30px;
+        }
+
+        /* Cards */
+        .card {
+            border: none;
+            background-color: #ffe9ef;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            color: #ff5c8a;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #ff5c8a;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff2d6c;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffd7e0;
+            color: #ff5c8a;
+        }
+
+        footer h5 {
+            font-weight: bold;
+        }
+
+        footer a {
+            color: #ff5c8a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff2d6c;
+        }
+
+        iframe {
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="K-Beauty Logo" width="40"> K-Beauty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="facialDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Facial
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="facialDropdown">
+                            <li><a class="dropdown-item" href="#">Pestañas</a></li>
+                            <li><a class="dropdown-item" href="#">Piel</a></li>
+                            <li><a class="dropdown-item" href="#">Granos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="uñasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Uñas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="uñasDropdown">
+                            <li><a class="dropdown-item" href="#">Tipos de uñas</a></li>
+                            <li><a class="dropdown-item" href="#">Pintauñas</a></li>
+                            <li><a class="dropdown-item" href="#">Colores</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Sección de Uñas -->
+        <div class="mb-5">
+            <h2 class="text-center">Uñas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="nails-product.jpg" class="card-img-top" alt="Producto de uñas">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto Uñas 1</h5>
+                            <p class="card-text">Precio: 20€</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="nails-service.jpg" class="card-img-top" alt="Servicio de uñas">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio Uñas 1</h5>
+                            <p class="card-text">Precio: 30€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Facial -->
+        <div>
+            <h2 class="text-center">Facial</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="facial-product.jpg" class="card-img-top" alt="Producto facial">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto Facial 1</h5>
+                            <p class="card-text">Precio: 25€</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="facial-service.jpg" class="card-img-top" alt="Servicio facial">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio Facial 1</h5>
+                            <p class="card-text">Precio: 35€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <p>Correo: contacto@kbeauty.com</p>
+                    <p>Horario: Lunes a Viernes - 10:00 a 20:00</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Ubicación</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126234.30542133988!2d-3.7035825!3d40.4167044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262cf06d839f%3A0xf406cbed7cbcae2!2sMadrid!5e0!3m2!1ses!2ses!4v1675941212839!5m2!1ses!2ses"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="#">Avisos Legales</a> | <a href="#">Cookies</a> | <a href="#">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
